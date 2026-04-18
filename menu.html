@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Chuggy Foods LLP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+    <div class="header-container">
+        <div class="logo"><img src="restaurent/1.png" alt="Chuggy Foods Logo"></div>
+        <button class="mobile-menu-btn">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#franchise">Franchise</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="page-hero">
+    <h1>OUR MENU</h1>
+    <p>Crispy. Juicy. Unforgettable — crafted with 11 secret herbs & spices</p>
+</section>
+
+<!-- ── BREADCRUMB ── -->
+<div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span>Menu
+</div>
+
+<!-- ── SEARCH ── -->
+<div class="search-wrap">
+    <div class="search-inner">
+        <input type="text" id="searchInput" placeholder="Search our menu… e.g. burger, wrap, mojito">
+        <span class="search-icon">🔍</span>
+    </div>
+</div>
+
+<!-- ── LEGEND ── -->
+<div class="legend-bar">
+    <div class="legend-inner">
+        <strong style="color:#555; font-size:13px; text-transform:uppercase; letter-spacing:1px;">Key:</strong>
+        <span><span class="dot" style="background:#1a8f3c;"></span> New Item</span>
+        <span><span class="dot" style="background:#ffc107;"></span> Popular</span>
+        <span><span class="dot" style="background:#cc4400;"></span> Spicy</span>
+        <span><span class="dot" style="background:#990000;"></span> Signature</span>
+    </div>
+</div>
+
+<!-- ── STICKY CATEGORY NAV ── -->
+<nav class="cat-nav">
+    <div class="cat-nav-inner">
+        <button class="cat-nav-btn active" onclick="scrollTo('chicken')"><span class="emoji">🍗</span> Fried Chicken</button>
+        <button class="cat-nav-btn" onclick="scrollTo('burgers')"><span class="emoji">🍔</span> Burgers</button>
+        <button class="cat-nav-btn" onclick="scrollTo('wraps')"><span class="emoji">🌯</span> Wraps & Rolls</button>
+        <button class="cat-nav-btn" onclick="scrollTo('combos')"><span class="emoji">🎉</span> Combos</button>
+        <button class="cat-nav-btn" onclick="scrollTo('drinks')"><span class="emoji">🥤</span> Drinks</button>
+        <button class="cat-nav-btn" onclick="scrollTo('sides')"><span class="emoji">🍟</span> Sides</button>
+    </div>
+</nav>
+
+<!-- ── MENU BODY ── -->
+<div class="menu-body" id="menuBody">
+
+    <!-- NO RESULTS -->
+    <div class="no-results" id="noResults">
+        <div class="icon">🍗</div>
+        <p>No items found — try a different search!</p>
+    </div>
+
+    <!-- FRIED CHICKEN -->
+    <section class="menu-section" id="chicken">
+        <div class="section-header">
+            <div class="icon-wrap">🍗</div>
+            <div class="text">
+                <h2>Fried Chicken</h2>
+                <p>Our signature hand-breaded, perfectly seasoned pieces</p>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+        <div class="cards-grid">
+
+            <!-- Wide/feature card -->
+            <div class="wide-card menu-card" data-name="signature fried chicken">
+                <div class="card-img-wrap">
+                    <img src="restaurent/3.jpg" alt="Signature Fried Chicken">
+                </div>
+                <div class="wide-card-body">
+                    <div class="label">⭐ Chef's Signature</div>
+                    <h3>The Original<br>Fried Chicken</h3>
+                    <p>Our legendary recipe — marinated overnight in a secret blend of 11 herbs and spices, hand-breaded, and fried to golden, juicy perfection. One bite and you'll understand why this is our bestseller.</p>
+                    <button class="order-btn" onclick="addToOrder('Signature Fried Chicken')">Order Now →</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="crispy chicken strips">
+                <div class="card-img-wrap">
+                    <img src="restaurent/6.jpg" alt="Chicken Strips">
+                    <span class="card-badge popular">Popular</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Crispy Chicken Strips</h3>
+                    <p>Premium breast cuts, breaded and fried to a golden crunch. Perfect for dipping in our signature sauces.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Crispy</span><span class="tag">Bestseller</span></div>
+                        <button class="order-btn" onclick="addToOrder('Crispy Chicken Strips')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="chicken nuggets">
+                <div class="card-img-wrap">
+                    <img src="restaurent/5.jpg" alt="Chicken Nuggets">
+                    <span class="card-badge">Signature</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Chicken Nuggets</h3>
+                    <p>Bite-sized chunks of tender chicken, coated in our light, crispy batter. Great for sharing — if you're willing to!</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Bite-size</span><span class="tag">Kids Fav</span></div>
+                        <button class="order-btn" onclick="addToOrder('Chicken Nuggets')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="spicy hot chicken">
+                <div class="card-img-wrap">
+                    <img src="restaurent/9.png" alt="Spicy Chicken">
+                    <span class="card-badge spicy">🌶 Spicy</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Spicy Hot Chicken</h3>
+                    <p>Turned up a notch — all the flavour of our original, coated in our fiery chilli glaze for those who like the heat.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Hot</span><span class="tag">Bold</span></div>
+                        <button class="order-btn" onclick="addToOrder('Spicy Hot Chicken')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BURGERS -->
+    <section class="menu-section" id="burgers">
+        <div class="section-header">
+            <div class="icon-wrap">🍔</div>
+            <div class="text">
+                <h2>Burgers</h2>
+                <p>Stacked high with the good stuff</p>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+        <div class="cards-grid">
+
+            <div class="menu-card" data-name="classic chicken burger">
+                <div class="card-img-wrap">
+                    <img src="restaurent/4.jpg" alt="Chicken Burger">
+                    <span class="card-badge popular">Popular</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Classic Chicken Burger</h3>
+                    <p>Crispy fried fillet, fresh lettuce, tomato, pickles and our secret house sauce in a toasted brioche bun.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Juicy</span><span class="tag">Classic</span></div>
+                        <button class="order-btn" onclick="addToOrder('Classic Chicken Burger')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="double crunch burger">
+                <div class="card-img-wrap">
+                    <img src="restaurent/4.jpg" alt="Double Burger">
+                    <span class="card-badge new">New</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Double Crunch Burger</h3>
+                    <p>Two crispy fillets, double cheese, caramelised onions, and our smoky BBQ sauce. Not for the faint-hearted.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Double</span><span class="tag">Loaded</span></div>
+                        <button class="order-btn" onclick="addToOrder('Double Crunch Burger')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="spicy zinger burger">
+                <div class="card-img-wrap">
+                    <img src="restaurent/4.jpg" alt="Zinger">
+                    <span class="card-badge spicy">🌶 Spicy</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Spicy Zinger Burger</h3>
+                    <p>Fiery marinated fillet, jalapeños, pepper jack cheese, and sriracha mayo. Warning — it bites back!</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Hot</span><span class="tag">Zinger</span></div>
+                        <button class="order-btn" onclick="addToOrder('Spicy Zinger Burger')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WRAPS & ROLLS -->
+    <section class="menu-section" id="wraps">
+        <div class="section-header">
+            <div class="icon-wrap">🌯</div>
+            <div class="text">
+                <h2>Wraps & Rolls</h2>
+                <p>Handheld, flavour-packed street-food favourites</p>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+        <div class="cards-grid">
+
+            <div class="menu-card" data-name="chicken wrap">
+                <div class="card-img-wrap">
+                    <img src="restaurent/7.jpg" alt="Chicken Wrap">
+                    <span class="card-badge popular">Popular</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Chicken Wrap</h3>
+                    <p>Crispy strips, fresh veggies, and tangy garlic mayo wrapped in a warm tortilla. Fresh, fast and filling.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Fresh</span><span class="tag">Handheld</span></div>
+                        <button class="order-btn" onclick="addToOrder('Chicken Wrap')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="shawarma roll">
+                <div class="card-img-wrap">
+                    <img src="restaurent/13.png" alt="Shawarma">
+                    <span class="card-badge new">New</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Shawarma Roll</h3>
+                    <p>Slow-spiced chicken shavings, garlic sauce, pickled vegetables, and chilli wrapped tight in a fluffy flatbread.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Street Food</span><span class="tag">Smoky</span></div>
+                        <button class="order-btn" onclick="addToOrder('Shawarma Roll')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMBOS -->
+    <section class="menu-section" id="combos">
+        <div class="section-header">
+            <div class="icon-wrap">🎉</div>
+            <div class="text">
+                <h2>Combos & Buckets</h2>
+                <p>More food, more value — made for sharing</p>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+        <div class="cards-grid">
+
+            <div class="wide-card menu-card" data-name="bucket chicken family feast">
+                <div class="card-img-wrap">
+                    <img src="restaurent/14.png" alt="Bucket Chicken">
+                </div>
+                <div class="wide-card-body">
+                    <div class="label">🎉 Best Value</div>
+                    <h3>Family Bucket<br>Chicken Feast</h3>
+                    <p>An overflowing bucket of our signature fried chicken pieces — enough for the whole table. Served with your choice of dips and fresh sides. Nothing brings people together like a Chuggy bucket.</p>
+                    <button class="order-btn" onclick="addToOrder('Family Bucket Feast')">Order Now →</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="shawarma burger combo">
+                <div class="card-img-wrap">
+                    <img src="restaurent/13.png" alt="Combo">
+                    <span class="card-badge popular">Popular</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Shawarma + Burger Combo</h3>
+                    <p>A shawarma roll AND a classic chicken burger together with a cola — the ultimate duo at unbeatable value.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Combo</span><span class="tag">Value</span></div>
+                        <button class="order-btn" onclick="addToOrder('Shawarma + Burger Combo')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="nuggets meal deal">
+                <div class="card-img-wrap">
+                    <img src="restaurent/5.jpg" alt="Nuggets Meal">
+                    <span class="card-badge new">New</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Nuggets Meal Deal</h3>
+                    <p>10 crispy nuggets, a portion of fries and your choice of drink. Quick, satisfying, and great value.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Meal</span><span class="tag">Deal</span></div>
+                        <button class="order-btn" onclick="addToOrder('Nuggets Meal Deal')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DRINKS -->
+    <section class="menu-section" id="drinks">
+        <div class="section-header">
+            <div class="icon-wrap">🥤</div>
+            <div class="text">
+                <h2>Drinks & Shakes</h2>
+                <p>Cool down with our refreshing selection</p>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+        <div class="cards-grid">
+
+            <div class="menu-card" data-name="fresh mojito">
+                <div class="card-img-wrap">
+                    <img src="restaurent/8.jpg" alt="Mojito">
+                    <span class="card-badge popular">Popular</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Fresh Mojito</h3>
+                    <p>Cool mint, fresh lime and sparkling water — the perfect sidekick to our crispy chicken. Available in classic, mango, and strawberry.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Fresh</span><span class="tag">Refreshing</span></div>
+                        <button class="order-btn" onclick="addToOrder('Fresh Mojito')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="thick milkshake">
+                <div class="card-img-wrap">
+                    <img src="restaurent/8.jpg" alt="Milkshake">
+                    <span class="card-badge new">New</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Thick Milkshake</h3>
+                    <p>Rich, creamy milkshakes in chocolate, vanilla, strawberry, and salted caramel. Dessert in a glass.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Creamy</span><span class="tag">Indulgent</span></div>
+                        <button class="order-btn" onclick="addToOrder('Thick Milkshake')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="cold cola soft drink">
+                <div class="card-img-wrap">
+                    <img src="restaurent/8.jpg" alt="Soft Drink">
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Cold Drinks</h3>
+                    <p>A selection of chilled soft drinks, juices, and sparkling water. The classic companion to any Chuggy meal.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Cold</span><span class="tag">Classic</span></div>
+                        <button class="order-btn" onclick="addToOrder('Cold Drink')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SIDES -->
+    <section class="menu-section" id="sides">
+        <div class="section-header">
+            <div class="icon-wrap">🍟</div>
+            <div class="text">
+                <h2>Sides & Extras</h2>
+                <p>The perfect companions to your main</p>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+        <div class="cards-grid">
+
+            <div class="menu-card" data-name="seasoned fries">
+                <div class="card-img-wrap">
+                    <img src="restaurent/10.png" alt="Fries">
+                    <span class="card-badge popular">Popular</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Seasoned Fries</h3>
+                    <p>Golden crispy fries tossed in our house seasoning blend. Addictively good — you'll always want more.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Crispy</span><span class="tag">Seasoned</span></div>
+                        <button class="order-btn" onclick="addToOrder('Seasoned Fries')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="coleslaw">
+                <div class="card-img-wrap">
+                    <img src="restaurent/11(2).png" alt="Coleslaw">
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Creamy Coleslaw</h3>
+                    <p>Fresh cabbage, carrot and our creamy house dressing. Light, cool, and the perfect balance to our spicy pieces.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Fresh</span><span class="tag">Creamy</span></div>
+                        <button class="order-btn" onclick="addToOrder('Creamy Coleslaw')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-name="garlic bread dip sauces">
+                <div class="card-img-wrap">
+                    <img src="restaurent/12.png" alt="Sauces">
+                    <span class="card-badge new">New</span>
+                    <button class="card-fav" onclick="toggleFav(this)">🤍</button>
+                </div>
+                <div class="card-body">
+                    <h3>Dipping Sauces</h3>
+                    <p>Choose from our signature garlic mayo, smoky BBQ, sriracha, honey mustard, or classic ketchup.</p>
+                    <div class="card-footer">
+                        <div class="card-tags"><span class="tag">Sauces</span><span class="tag">Extras</span></div>
+                        <button class="order-btn" onclick="addToOrder('Dipping Sauces')">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<!-- ── ORDER TOAST ── -->
+<div id="toast" style="
+    position:fixed; bottom:90px; left:50%; transform:translateX(-50%) translateY(30px);
+    background:#1a1a1a; color:white; padding:13px 26px; border-radius:30px;
+    font-size:14px; font-weight:700; letter-spacing:0.5px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.3);
+    opacity:0; transition:all 0.3s; z-index:999;
+    pointer-events:none; white-space:nowrap;
+"></div>
+
+<!-- ── PROMO BAND ── -->
+<section class="promo-band">
+    <h2>30-MINUTE DELIVERY GUARANTEE</h2>
+    <p>Order online or call us directly — your Chuggy feast arrives hot, fresh, and on time. Every single time.</p>
+    <a href="contact.html" class="cta-button">Order Now</a>
+    <a href="tel:7025961726" class="cta-button outline">Call Us</a>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Franchise Marketing</h3>
+            <p>Interested in opening your own Chuggy Foods franchise?</p>
+            <p>Call us: 7025961726</p>
+            <p>Email: info@chuggyfoods.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Store Hours</h3>
+            <p>Monday - Thursday: 11AM - 10PM</p>
+            <p>Friday - Saturday: 11AM - 11PM</p>
+            <p>Sunday: 12PM - 9PM</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Address: 123 Crispy Lane, Foodville</p>
+            <p>Phone: 7025961726</p>
+            <p>Email: info@chuggyfoods.com</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><img src="restaurent/f.jpeg" alt="Facebook" width="32" height="32"></a>
+                <a href="https://www.x.com" target="_blank"><img src="restaurent/x.png" alt="X" width="32" height="32"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="restaurent/i2.png" alt="Instagram" width="32" height="32"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 Values of Chuggy Foods LLP. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <!-- WhatsApp Button -->
+   <a href="https://wa.me/7025961726" class="whatsapp-btn" target="_blank">
+    <img src="restaurent/w.png" alt="WhatsApp" style="width: 40px; height: 40px;">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Chuggy Foods LLP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="restaurent/1.png" alt="Chuggy Foods Logo">
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#franchise">Franchise</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1>OUR GALLERY</h1>
+        <p>A feast for the eyes — before the feast for the taste buds</p>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        Gallery
+    </div>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <h2>EXPLORE OUR MOMENTS</h2>
+        <p class="subtitle">Browse through our food, store, and happy customer moments</p>
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="store">Our Store</button>
+            <button class="filter-btn" data-filter="combo">Combos & Deals</button>
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+            <button class="filter-btn" data-filter="team">Our Team</button>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="gallery-grid" id="galleryGrid">
+
+            <!-- FOOD items -->
+            <div class="gallery-item" data-category="food" data-title="Signature Fried Chicken" data-src="restaurent/3.jpg">
+                <img src="restaurent/3.jpg" alt="Fried Chicken" loading="lazy">
+                <div class="cat-badge">Food</div>
+                <div class="gallery-overlay">
+                    <h4>Signature Fried Chicken</h4>
+                    <span>Our bestseller</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <div class="gallery-item" data-category="food" data-title="Crispy Chicken Burger" data-src="restaurent/4.jpg">
+                <img src="restaurent/4.jpg" alt="Chicken Burger" loading="lazy">
+                <div class="cat-badge">Food</div>
+                <div class="gallery-overlay">
+                    <h4>Crispy Chicken Burger</h4>
+                    <span>Fresh & flavourful</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <div class="gallery-item" data-category="food" data-title="Chicken Nuggets" data-src="restaurent/5.jpg">
+                <img src="restaurent/5.jpg" alt="Chicken Nuggets" loading="lazy">
+                <div class="cat-badge">Food</div>
+                <div class="gallery-overlay">
+                    <h4>Chicken Nuggets</h4>
+                    <span>Bite-sized perfection</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <div class="gallery-item" data-category="food" data-title="Chicken Strips" data-src="restaurent/6.jpg">
+                <img src="restaurent/6.jpg" alt="Chicken Strips" loading="lazy">
+                <div class="cat-badge">Food</div>
+                <div class="gallery-overlay">
+                    <h4>Chicken Strips</h4>
+                    <span>Golden & crunchy</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <div class="gallery-item" data-category="food" data-title="Chicken Wraps" data-src="restaurent/7.jpg">
+                <img src="restaurent/7.jpg" alt="Chicken Wraps" loading="lazy">
+                <div class="cat-badge">Food</div>
+                <div class="gallery-overlay">
+                    <h4>Chicken Wraps</h4>
+                    <span>Wrapped in flavour</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <!-- COMBO items -->
+            <div class="gallery-item" data-category="combo" data-title="Shawarma + Burger Combo" data-src="restaurent/13.png">
+                <img src="restaurent/13.png" alt="Combo" loading="lazy">
+                <div class="cat-badge">Combo</div>
+                <div class="gallery-overlay">
+                    <h4>Shawarma + Burger Combo</h4>
+                    <span>Best value deal</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <div class="gallery-item" data-category="combo" data-title="Bucket Chicken" data-src="restaurent/14.png">
+                <img src="restaurent/14.png" alt="Bucket Chicken" loading="lazy">
+                <div class="cat-badge">Combo</div>
+                <div class="gallery-overlay">
+                    <h4>Bucket Chicken</h4>
+                    <span>Family favourite</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <div class="gallery-item" data-category="combo" data-title="The Real & Juicy" data-src="restaurent/9.png">
+                <img src="restaurent/9.png" alt="Juicy Chicken" loading="lazy">
+                <div class="cat-badge">Combo</div>
+                <div class="gallery-overlay">
+                    <h4>The Real & Juicy</h4>
+                    <span>11 herbs & spices</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <!-- DRINKS -->
+            <div class="gallery-item" data-category="drinks" data-title="Fresh Mojito" data-src="restaurent/8.jpg">
+                <img src="restaurent/8.jpg" alt="Mojito" loading="lazy">
+                <div class="cat-badge">Drinks</div>
+                <div class="gallery-overlay">
+                    <h4>Fresh Mojito</h4>
+                    <span>Cool & refreshing</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <!-- STORE items -->
+            <div class="gallery-item" data-category="store" data-title="Hot & Fresh Delivery" data-src="restaurent/12.png">
+                <img src="restaurent/12.png" alt="Delivery" loading="lazy">
+                <div class="cat-badge">Store</div>
+                <div class="gallery-overlay">
+                    <h4>Hot & Fresh Delivery</h4>
+                    <span>30-min guarantee</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <div class="gallery-item" data-category="store" data-title="Online Ordering" data-src="restaurent/11(2).png">
+                <img src="restaurent/11(2).png" alt="Online Order" loading="lazy">
+                <div class="cat-badge">Store</div>
+                <div class="gallery-overlay">
+                    <h4>Easy Online Ordering</h4>
+                    <span>Order anytime, anywhere</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+            <div class="gallery-item" data-category="store" data-title="Special Offers" data-src="restaurent/10.png">
+                <img src="restaurent/10.png" alt="Offers" loading="lazy">
+                <div class="cat-badge">Store</div>
+                <div class="gallery-overlay">
+                    <h4>Special Offers</h4>
+                    <span>Exclusive deals daily</span>
+                </div>
+                <div class="zoom-icon">🔍</div>
+            </div>
+
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <div class="icon">🍗</div>
+            <p>No photos in this category yet — check back soon!</p>
+        </div>
+    </section>
+
+    <!-- Stats Band -->
+    <section class="stats-band">
+        <div class="stats-band-inner">
+            <div class="stat-block">
+                <h3>50+</h3>
+                <p>Menu Photos</p>
+            </div>
+            <div class="stat-block">
+                <h3>20K+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-block">
+                <h3>5★</h3>
+                <p>Avg. Rating</p>
+            </div>
+            <div class="stat-block">
+                <h3>11</h3>
+                <p>Secret Spices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>HUNGRY YET?</h2>
+        <p>Every photo tells a story of crispy, juicy, flavour-packed perfection. Come experience it yourself!</p>
+        <a href="index.html#menu" class="cta-button">View Menu</a>
+        <a href="contact.html" class="cta-button outline">Order Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Franchise Marketing</h3>
+                <p>Interested in opening your own Chuggy Foods franchise?</p>
+                <p>Call us: 7025961726</p>
+                <p>Email: info@chuggyfoods.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Store Hours</h3>
+                <p>Monday - Thursday: 11AM - 10PM</p>
+                <p>Friday - Saturday: 11AM - 11PM</p>
+                <p>Sunday: 12PM - 9PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Address: 123 Crispy Lane, Foodville</p>
+                <p>Phone: 7025961726</p>
+                <p>Email: info@chuggyfoods.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="restaurent/f.jpeg" alt="Facebook" width="32" height="32">
+                    </a>
+                    <a href="https://www.x.com" target="_blank">
+                        <img src="restaurent/x.png" alt="X" width="32" height="32">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="restaurent/i2.png" alt="Instagram" width="32" height="32">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Values of Chuggy Foods LLP. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+   <a href="https://wa.me/7025961726" class="whatsapp-btn" target="_blank">
+    <img src="restaurent/w.png" alt="WhatsApp" style="width: 40px; height: 40px;">
+</a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-inner">
+            <button class="lb-close" id="lbClose">✕</button>
+            <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+            <img src="" alt="" id="lbImg">
+            <button class="lb-nav lb-next" id="lbNext">›</button>
+            <div class="lightbox-caption">
+                <h3 id="lbTitle"></h3>
+                <span id="lbCat"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

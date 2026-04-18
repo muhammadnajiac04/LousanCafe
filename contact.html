@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chuggy Foods LLP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="restaurent/1.png" alt="Chuggy Foods Logo">
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#franchise">Franchise</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1>CONTACT US</h1>
+        <p>We'd love to hear from you — reach out anytime!</p>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        Contact Us
+    </div>
+
+    <!-- Info Cards -->
+    <section class="info-cards">
+        <div class="info-cards-container">
+            <h2>GET IN TOUCH</h2>
+            <p class="subtitle">Multiple ways to reach the Chuggy Foods team</p>
+            <div class="cards-grid">
+                <div class="info-card">
+                    <div class="icon">📞</div>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:7025961726">7025961726</a></p>
+                    <p style="margin-top:8px; font-size:13px; color:#999;">Mon–Sat: 10AM – 10PM</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">✉️</div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@chuggyfoods.com">info@chuggyfoods.com</a></p>
+                    <p style="margin-top:8px; font-size:13px; color:#999;">We reply within 24 hours</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">📍</div>
+                    <h3>Visit Us</h3>
+                    <p>123 Crispy Lane,<br>Foodville</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/7025961726" target="_blank">Chat on WhatsApp</a></p>
+                    <p style="margin-top:8px; font-size:13px; color:#999;">Quick & easy support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form + Side Info -->
+    <section class="contact-main">
+        <div class="contact-main-container">
+
+            <!-- Form -->
+            <div class="contact-form-box">
+                <h2>SEND US A MESSAGE</h2>
+                <p>Fill in the form below and we'll get back to you as soon as possible.</p>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name *</label>
+                        <input type="text" id="fname" placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name *</label>
+                        <input type="text" id="lname" placeholder="Doe">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+91 00000 00000">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject">
+                        <option value="" disabled selected>Select a topic</option>
+                        <option>General Enquiry</option>
+                        <option>Franchise Opportunity</option>
+                        <option>Feedback / Complaint</option>
+                        <option>Catering / Bulk Order</option>
+                        <option>Delivery Issue</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button class="submit-btn" onclick="handleSubmit()">Send Message 🚀</button>
+
+                <div class="success-message" id="successMsg">
+                    ✅ Thank you! Your message has been sent. We'll be in touch soon!
+                </div>
+            </div>
+
+            <!-- Side Info -->
+            <div class="contact-side">
+
+                <!-- Hours -->
+                <div class="side-card">
+                    <h3>🕐 Opening Hours</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span class="day">Monday – Thursday</span>
+                            <span class="time">11AM – 10PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Friday – Saturday</span>
+                            <span class="time">11AM – 11PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Sunday</span>
+                            <span class="time">12PM – 9PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="side-card">
+                    <h3>📋 Contact Details</h3>
+
+                    <div class="contact-detail-row">
+                        <div class="icon">📞</div>
+                        <div class="detail">
+                            <h4>Phone</h4>
+                            <a href="tel:7025961726">7025961726</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-row">
+                        <div class="icon">✉️</div>
+                        <div class="detail">
+                            <h4>Email</h4>
+                            <a href="mailto:info@chuggyfoods.com">info@chuggyfoods.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-row">
+                        <div class="icon">📍</div>
+                        <div class="detail">
+                            <h4>Address</h4>
+                            <p>123 Crispy Lane, Foodville</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-row">
+                        <div class="icon">🚚</div>
+                        <div class="detail">
+                            <h4>Delivery</h4>
+                            <p>Guaranteed in 30 minutes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social -->
+                <div class="side-card">
+                    <h3>🌐 Follow Us</h3>
+                    <p style="color:#666; font-size:14px; margin-bottom:15px;">Stay updated with our latest offers, new items, and events!</p>
+                    <div class="social-row">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="restaurent/f.jpeg" alt="Facebook">
+                        </a>
+                        <a href="https://www.x.com" target="_blank">
+                            <img src="restaurent/x.png" alt="X">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="restaurent/i2.png" alt="Instagram">
+                        </a>
+                        <a href="https://wa.me/7025961726" target="_blank" style="background-color:#25d366;">
+                            <img src="restaurent/w.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <h2>FIND US HERE</h2>
+        <p class="subtitle">Come visit us at our restaurant — we'd love to serve you in person!</p>
+        <div class="map-placeholder">
+            <div class="map-pin">📍</div>
+            <p>123 Crispy Lane, Foodville</p>
+            <p style="font-size:13px; margin-top:8px;">Replace this with a Google Maps embed</p>
+        </div>
+    </section>
+
+    <!-- Franchise CTA -->
+    <section class="franchise-cta">
+        <h2>INTERESTED IN A FRANCHISE?</h2>
+        <p>Join the Chuggy Foods family! Low investment, high returns, and full support every step of the way. Call us or send a message today.</p>
+        <a href="tel:7025961726" class="cta-button">Call Now</a>
+        <a href="index.html#franchise" class="cta-button outline">Learn More</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Franchise Marketing</h3>
+                <p>Interested in opening your own Chuggy Foods franchise?</p>
+                <p>Call us: 7025961726</p>
+                <p>Email: info@chuggyfoods.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Store Hours</h3>
+                <p>Monday - Thursday: 11AM - 10PM</p>
+                <p>Friday - Saturday: 11AM - 11PM</p>
+                <p>Sunday: 12PM - 9PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Address: 123 Crispy Lane, Foodville</p>
+                <p>Phone: 7025961726</p>
+                <p>Email: info@chuggyfoods.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="restaurent/f.jpeg" alt="Facebook" width="32" height="32">
+                    </a>
+                    <a href="https://www.x.com" target="_blank">
+                        <img src="restaurent/x.png" alt="X" width="32" height="32">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="restaurent/i2.png" alt="Instagram" width="32" height="32">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Values of Chuggy Foods LLP. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+   <a href="https://wa.me/7025961726" class="whatsapp-btn" target="_blank">
+    <img src="restaurent/w.png" alt="WhatsApp" style="width: 40px; height: 40px;">
+</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
